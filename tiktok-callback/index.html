@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TikTok Auth — prodbygrillo</title>
+    <style>
+      body { background: #0c0c0c; color: #c0c0c0; font-family: 'Courier New',
+  monospace;
+             display: flex; align-items: center; justify-content: center;
+  height: 100vh; margin: 0; }
+      p { font-size: 13px; letter-spacing: 1px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <p>A redirecionar para o dashboard...</p>
+    <script>
+      const LOCAL = 'http://localhost:3010/api/tiktok/callback'
+      setTimeout(() => { window.location.replace(LOCAL +
+  window.location.search) }, 800)
+    </script>
+  </body>
+  </html>
+
+  Também cria index.html na raiz do repo (conteúdo simples é suficiente, pode
+  ser qualquer HTML).
+
+  ---
